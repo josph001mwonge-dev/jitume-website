@@ -1,0 +1,83 @@
+body{
+	font-family:Arial;
+	margin:0;
+	background-color:lightgray;
+}
+header{
+	background-color:navy;
+	color:white;
+	text-align:center;
+	padding:25px;
+}
+.logo{
+	text-align:center;}
+nav{
+	display:flex;
+	padding:15px;
+	justift-content:center;
+}
+nav a{
+	display:flex;
+	color:white;
+	text-decoration:none;
+	padding:15px;
+}
+.dropdown{
+	position:relative;
+	padding:12px;
+	display:flex;
+}
+.dropdown a{text-decoration:none;
+	font-weight:bold;
+	padding:12px 15px;
+	}
+.dropdown-content{
+	display:none;
+	position:absolute;
+	top:100%;
+	}
+.dropdown-content a{
+	color:#a3d62;
+	padding:10px 15px;
+	text-decoration:none;
+	display:block;
+	background:blue;
+}
+.dropdown-content a:hover{
+	background:black;
+}
+
+.dropdown:hover .dropdown-content{display:block;}
+main{
+	background-color:white;
+	padding:20px;
+}
+
+.dropdown-content.show{
+	display:block;}
+
+section{
+	background-color:lightblue;
+	margin:15px;
+	padding:20px;
+	border-radius:8px;
+}
+input, textarea{
+	display:block;
+	width:90%;
+	padding:10px;
+	margin:10px;
+}
+input[type="submit]{
+	background-color:green;
+	color:white;
+	border:none;
+	padding:12px;
+}
+footer{
+	background-color:black;
+	color:white;
+	text-align:center;
+	padding:20px;
+	display:flex;
+}

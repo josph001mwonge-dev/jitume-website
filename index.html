@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jitume Technical Training Institute</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+<div class="logo">
+<img src="jitume.png" alt="screen" width="100" height="100">
+</div>
+
+<div><h1>Jitume Technical Training Institute</h1></div>
+	<nav>
+<div class="dropdown">
+<a href="departments" id="deptmenu">Departments</a>
+	<div class="dropdown-content">
+	 <a href="departments.html">Information Communication Technology</a>
+	 <a href="departments.html">Electrical Engineering</a>
+	 <a href="departments.html">Business management</a>
+	</div>
+	</div>
+<div class="dropdown">
+<a href="courses">Courses Offered</a>
+	<div class="dropdown-content">
+	 <a href="courses.html">ICT Technician</a>
+	 <a href="courses.html">Electrical Engineering</a>
+	 <a href="courses.html">Business management</a>
+	</div>
+	</div>
+
+<div class="dropdown">
+<a href="Accommodation">Accommodation</a>
+	<div class="dropdown-content">
+	 <a href="accommodation.html">Student hostels</a>
+	 <a href="accommodation.html">Private Accommodation</a>
+	 <a href="accommodation.html">Nearby Hostels</a>
+	</div>
+	</div>
+
+<div class="dropdown">
+<a href="intakes">Intakes</a>
+	<div class="dropdown-content">
+	 <a href="intakes">January Intake</a>
+	 <a href="intakes">May Intake</a>
+	 <a href="intakes">September Intake</a>
+	</div>
+	</div>
+
+</nav>
+	</header>
+<main>
+<section>
+<h2>Student Registration Form</h2>
+	<form action="register.php" method="POST">
+	<label for="firstname">FirstName:</label>
+	<input type="text" name="first_name" required>
+	<label for="lastname">LastName:</label>
+	<input type="text" name="Last_name" required>
+	<label for="id_number">IdNumber:</label>
+	<input type="text" name="id_number" required>
+	<label for="phoneNumber">Phone_Number:</label>
+	<input type="text" name="phone_number" required>
+	<label for="comment">Comment:</label>
+	<textarea name="comment"></textarea>
+	<input type="submit" value="register">
+	</form>
+</section>
+</main>
+<footer>
+<h2>Contact Us</h2>
+<p>Phone: 07000000000 | Email:info@jitume.ac.ke | postal address:P.O Box 100, kenya</p>
+</footer> 
+<script>
+document.getElementById('deptmenu').addEventListListener('click', function(e){e.preventDefault();
+	document.querySelector('.dropdown-content').classList.toggle('show');
+		});
+document.addEventListener('click', function(e){
+	if(!e.target.closest('.dropdown')){
+	document.querySelector('.dropdown-content').classList.remove('show');
+}
+});
+</script>
+</body>
+</html>
